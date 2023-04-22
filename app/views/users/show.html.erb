@@ -1,12 +1,12 @@
 <% flash.each do |message_type, message| %>
   <%= content_tag :div, message, class: message_type %>
 <% end %>
-<div class = "container px-5 px-sm-0">
-  <div class = "row mt-3">
+<div class = "container">
+  <div class = "row">
     <div class = "col-md-3">
       <%= render 'books/list', user: @user, book: @book %>
     </div>
-      <div class = "col-md-8 offset-1">
+      <div class = "col-md-8 offset-md-1">
         <h2>Users</h2>
           <table class = "table table-hover table-inverse">
             <thead>
@@ -37,3 +37,12 @@
     </div>
   </div>
 </div>
+<footer>
+    <div class = "container mt-3">
+      <div class = "row">
+        <div class = "mx-auto">
+          <p>CopyRight Infratop.inc</p>
+        </div>
+      </div>
+    </div>
+</footer>
